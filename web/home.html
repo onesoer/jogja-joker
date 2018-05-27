@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html>
+<head>
+ <title>Joker</title>
+ <style> @import url(stylesheets/low.css); </style>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+ <script src="http://code.jquery.com/jquery.min.js"></script>
+ <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+ <!-- Start of first page -->
+ <div data-role="page" id="foo">
+  <div data-role="header" data-position="fixed">
+   <h1>Joker</h1>
+   <a href="#mypanel2" class="ui-btn-right ui-btn ui-icon-gear ui-btn-icon-notext ui-corner-all">No text</a>
+  </div><!-- /header -->
+
+  <div role="main" class="ui-content">
+    <form>
+          <input data-type="search" id="filterControlgroup-input"> <!-- /searching -->
+    </form>
+      <div data-role="controlgroup" data-filter="true" data-input="#filterControlgroup-input"> <!--/filtering -->
+          <div class="gallery"> <!--/isi-->
+          <a target="_blank" href="img_forest.jpg">
+            <img src="gbr/kiri.png" alt="Forest" width="600" height="400">
+          </a>
+          <div class="desc">Programmer Harian</div>
+          <div class="desc"> Upah : Rp. 100.000</div>
+        </div>
+      </div>
+
+  </div><!-- /content -->
+  <div data-role="footer" data-position="fixed">
+     <h4>Copyright &COPY; by joker aKakom 2018 </h4>
+  </div><!-- /footer -->
+  
+  <div data-role="panel" data-position="right" data-position-fixed="true" data-display="overlay" data-theme="a" id="mypanel2">
+   <form class="userform">
+    <h2>Login</h2>
+    <label for="name">Username:</label>
+    <input type="text" name="name" id="name" value="" data-clear-btn="true" data-mini="true">
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" value="" data-clear-btn="true" autocomplete="off" data-mini="true">
+    <div class="ui-grid-a">
+     <div class="ui-block-a"><a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-b ui-mini">Cancel</a></div>
+     <div class="ui-block-b"><a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-mini">Save</a></div>
+     Belum Punya Akun? Daftar <a href="daftar.html"> Disini </a>
+    </div>
+   </form>
+  </div><!-- /panel -->
+
+</body>
+</html>
