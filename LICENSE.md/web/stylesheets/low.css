@@ -1,0 +1,67 @@
+.atas {
+	background-color:#42c8f4;
+	padding: 1% 6%; 
+	width: 88%;
+}
+
+div.atas img {
+	max-width: 30vw;
+
+}
+
+div.gallery {
+    margin: 1%;
+    border: 0.1em solid #ccc;
+    float: left;
+    width: 46%;
+    text-align: center;
+}
+
+div.gallery:hover {
+    border: 0.1em solid #777;
+}
+
+div.gallery img {
+    max-width: 25vw;
+    max-height:  25vw;
+    position: center;
+}
+
+div.desc {
+    padding: 0.51%;
+    text-align: center;
+}
+
+.bawah {
+	background-color:#42c8f4;
+	padding: 1% 6%; 
+	width: 88%;
+	text-align: center;
+	float : right;
+	margin-top: 2.5%;
+}
+
+@media (min-width: 600px) {
+	div.gallery {
+	    margin: 1%;
+	    border: 1% solid #ccc;
+	    float: left;
+	    width: 30%;
+	}	  
+}
+
+@media (min-width: 800px) {
+	div.gallery {
+	    margin: 1%;
+	    border: 1% solid #ccc;
+	    float: left;
+	    width: 22%;
+	}
+
+	div.gallery img {
+	    max-width: 20vw;
+	    max-height: 20vw;
+	    position: center;
+	}
+}
+
